@@ -21,6 +21,6 @@ app.get('/',(req,res)=>{
     res.send('Backend is Running');
 })
 
-app.listen(5000,()=>{
+app.listen(process.env.PORT||5000,()=>{
     console.log('Listening to the PORT');
 })
